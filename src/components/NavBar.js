@@ -1,7 +1,32 @@
 import React from 'react';
+import { Flex, Text } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 const NavBar = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Flex gridGap="5">
+        <Link to="/">
+          <Text fontSize="20px">Home</Text>
+        </Link>
+
+        <Link to="/search">
+          <Text fontSize="20px">Search</Text>
+        </Link>
+
+        <Link to="/my-form">
+          <Text fontSize="20px">My Form</Text>
+        </Link>
+
+        <Link to="/info">
+          <Text fontSize="20px">Info</Text>
+        </Link>
+
+        <Link to="/bonus">
+          <Text fontSize="20px">Menu</Text>
+        </Link>
+      </Flex>
+    </div>
+  );
 };
 
 export default NavBar;
