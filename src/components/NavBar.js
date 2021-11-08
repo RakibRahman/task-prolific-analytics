@@ -4,7 +4,15 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
   return (
     <div>
-      <Flex gridGap="5">
+      <Flex
+        gridGap="5"
+        bg="#4C526A"
+        color="#D2DBE3"
+        align="center"
+        justify="start"
+        pl="26rem"
+        py="5"
+      >
         <Link to="/">
           <Text fontSize="20px">Home</Text>
         </Link>

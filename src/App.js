@@ -11,7 +11,7 @@ import Bonus from './components/Bonus';
 function App() {
   return (
     <ChakraProvider>
-      <Box className="app">
+      <Box className="app" bg="#EDF0F7" minH="100vh">
         <BrowserRouter>
           <NavBar />
           <Routes>

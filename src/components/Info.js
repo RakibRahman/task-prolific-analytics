@@ -1,7 +1,11 @@
 import React from 'react';
-
+import { Box } from '@chakra-ui/react';
 const Info = () => {
-  return <div>Info</div>;
+  return (
+    <Box w="700px" h="400px" bg="white" mx="auto" borderRadius="5px" p="4">
+      home
+    </Box>
+  );
 };
 
 export default Info;
