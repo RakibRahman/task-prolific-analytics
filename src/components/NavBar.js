@@ -10,8 +10,9 @@ const NavBar = () => {
         color="#D2DBE3"
         align="center"
         justify="start"
-        pl="26rem"
+        pl="20rem"
         py="5"
+        mb="3"
       >
         <Link to="/">
           <Text fontSize="20px">Home</Text>
