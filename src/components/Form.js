@@ -40,8 +40,16 @@ const Form = () => {
         <form onSubmit={handleSubmit(onSubmit)} style={{ width: '60%' }}>
           <FormControl>
             <FormLabel fontWeight="bold">Email</FormLabel>
-            <Input {...register('email', { required: true })} />
-            {errors.email && <Text color="red">Email field is required</Text>}
+            <Input
+              {...register('email', {
+                required: 'Email field is required',
+                pattern: {
+                  value: /^\S+@\S+$/i,
+                  message: 'This is not a valid email',
+                },
+              })}
+            />
+            <Text color="red">{errors.email?.message}</Text>
           </FormControl>
           <FormControl>
             <FormLabel fontWeight="bold">Name</FormLabel>

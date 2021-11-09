@@ -6,7 +6,7 @@ import NavBar from './components/NavBar';
 import Home from './components/Home';
 import Info from './components/Info';
 import Search from './components/Search';
-import Form from './components/Form/Form';
+import Form from './components/Form';
 import Bonus from './components/Bonus';
 function App() {
   return (
