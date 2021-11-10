@@ -31,7 +31,7 @@ const NavBar = () => {
         </Link>
 
         <Link to="/bonus">
-          <Text fontSize="20px">Menu</Text>
+          <Text fontSize="20px">Bonus</Text>
         </Link>
       </Flex>
     </div>

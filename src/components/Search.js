@@ -5,6 +5,7 @@ const Search = () => {
   const [value, setValue] = useState('Hello World');
   const inputRef = useRef();
   useEffect(() => {
+    document.title = 'Search';
     inputRef.current.focus();
   }, []);
 

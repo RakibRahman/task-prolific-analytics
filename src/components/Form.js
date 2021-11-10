@@ -1,3 +1,4 @@
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import {
   Box,
@@ -15,6 +16,9 @@ import {
   useToast,
 } from '@chakra-ui/react';
 const Form = () => {
+  React.useEffect(() => {
+    document.title = 'Form';
+  }, []);
   const successToast = useToast({
     title: 'Form Submitted.',
     description: 'User Data Successfully Submitted',

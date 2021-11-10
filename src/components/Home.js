@@ -1,6 +1,9 @@
 import React from 'react';
 import { Flex, Box, Text, Heading, Image, Spacer } from '@chakra-ui/react';
 const Home = () => {
+  React.useEffect(() => {
+    document.title = 'Home';
+  }, []);
   return (
     <Box w="900px" h="400px" bg="white" mx="auto" borderRadius="15px" p="4">
       <Flex>
