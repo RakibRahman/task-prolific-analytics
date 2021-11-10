@@ -5,11 +5,21 @@ const Album = () => {
   const { data } = useFetch('https://jsonplaceholder.typicode.com/albums');
   return (
     <Box>
+      <Text fontWeight="bold" textAlign="left" my="2">
+        Album List
+      </Text>
       <VStack>
-        <Text>Album List </Text>
         {data.map(album => (
-          <Flex key={album.id}>
-            <Image src={imgUrl} />
+          <Flex
+            key={album.id}
+            border="1px solid gray"
+            borderRadius="5px"
+            width="400px"
+            height="150px"
+            gridGap="2"
+            p="3"
+          >
+            <Image src={imgUrl} borderRadius="10px" alt="album cover" />
             <Text>{album.title}</Text>
           </Flex>
         ))}

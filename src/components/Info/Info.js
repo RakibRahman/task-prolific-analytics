@@ -7,7 +7,7 @@ const Info = () => {
     <Box w="900px" minH="400px" bg="white" mx="auto" borderRadius="15px" p="4">
       <Flex>
         <User />
-
+        <Spacer />
         <Album />
       </Flex>
     </Box>
