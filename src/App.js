@@ -7,7 +7,7 @@ import Home from './components/Home';
 import Info from './components/Info/Info';
 import Search from './components/Search';
 import Form from './components/Form';
-import Bonus from './components/Bonus';
+import Bonus from './components/Bonus/Bonus';
 function App() {
   return (
     <ChakraProvider>
