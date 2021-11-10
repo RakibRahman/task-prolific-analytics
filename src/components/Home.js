@@ -5,8 +5,15 @@ const Home = () => {
     document.title = 'Home';
   }, []);
   return (
-    <Box w="900px" h="400px" bg="white" mx="auto" borderRadius="15px" p="4">
-      <Flex>
+    <Box
+      w={{ sm: '100%', lg: '900px' }}
+      minH="400px"
+      bg="white"
+      mx="auto"
+      borderRadius="15px"
+      p="4"
+    >
+      <Flex flexWrap="wrap">
         <Flex gridGap="1" align="start">
           <Image
             w="100px"

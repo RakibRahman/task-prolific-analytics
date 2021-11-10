@@ -4,8 +4,8 @@ const Tree = ({ data = [] }) => {
   return (
     <Box>
       <Box>
-        {data.map(tree => (
-          <TreeNode node={tree} />
+        {data.map((tree, index) => (
+          <TreeNode key={index} node={tree} />
         ))}
       </Box>
     </Box>

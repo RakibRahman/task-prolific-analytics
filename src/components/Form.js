@@ -39,7 +39,14 @@ const Form = () => {
   };
 
   return (
-    <Box w="900px" minH="400px" bg="white" mx="auto" borderRadius="15px" p="4">
+    <Box
+      w={{ sm: '100%', lg: '900px' }}
+      minH="400px"
+      bg="white"
+      mx="auto"
+      borderRadius="15px"
+      p="4"
+    >
       <Flex justify="center" w="100%" align="center" flexDirection="column">
         <form onSubmit={handleSubmit(onSubmit)} style={{ width: '60%' }}>
           <FormControl>

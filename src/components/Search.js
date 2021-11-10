@@ -10,7 +10,14 @@ const Search = () => {
   }, []);
 
   return (
-    <Box w="900px" h="400px" bg="white" mx="auto" borderRadius="15px" p="4">
+    <Box
+      w={{ sm: '100%', lg: '900px' }}
+      minH="400px"
+      bg="white"
+      mx="auto"
+      borderRadius="15px"
+      p="4"
+    >
       <Text fontSize="20px" fontWeight="bold">
         {value}
       </Text>

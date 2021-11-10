@@ -10,9 +10,10 @@ const NavBar = () => {
         color="#D2DBE3"
         align="center"
         justify="start"
-        pl="20rem"
+        pl={{ lg: '20rem', sm: '2rem' }}
         py="5"
         mb="3"
+        flexWrap="wrap"
       >
         <Link to="/">
           <Text fontSize="20px">Home</Text>

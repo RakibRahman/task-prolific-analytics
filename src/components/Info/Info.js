@@ -7,8 +7,15 @@ const Info = () => {
     document.title = 'Info';
   }, []);
   return (
-    <Box w="900px" minH="400px" bg="white" mx="auto" borderRadius="15px" p="4">
-      <Flex>
+    <Box
+      w={{ sm: '100%', lg: '900px' }}
+      minH="400px"
+      bg="white"
+      mx="auto"
+      borderRadius="15px"
+      p="4"
+    >
+      <Flex flexWrap="wrap">
         <User />
         <Spacer />
         <Album />
